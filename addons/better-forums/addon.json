@@ -1,0 +1,27 @@
+{
+    "name": "Better Forums",
+    "description": "Forums shouldn't be boring!",
+    "tags": ["community"],
+    "enabledByDefault": true,
+    "settings": [
+        {
+          "name": "bump button",
+          "id": "bump-button",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "bump text",
+          "id": "bump-text",
+          "type": "string",
+          "default": "bump"
+        }
+      ],
+    "credits": [
+        {
+          "name": "BarelySmooth",
+          "link": "https://github.com/barelysmooth"
+        }
+      ]
+  }
+  
