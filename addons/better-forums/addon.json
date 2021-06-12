@@ -1,6 +1,12 @@
 {
     "name": "Better Forums",
     "description": "Forums shouldn't be boring!",
+    "userscripts": [
+        {
+            "url": "userscript.js",
+            "matches": ["https://scratch.mit.edu/*"]
+        }
+    ],
     "tags": ["community"],
     "enabledByDefault": true,
     "settings": [
@@ -24,4 +30,3 @@
         }
       ]
   }
-  
