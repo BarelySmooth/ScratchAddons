@@ -17,28 +17,16 @@
 #messages {
   margin-bottom: 40px;
 }
-#brdheader {
-  margin-bottom: 40px;
-  padding-top: 20px;
-  padding-bottom: 8px;
-  border: none;
-  border-radius: 0;
-  background: #0fbd8c;
-  color: #fff;
-}
+
+
 #brdheader > .box-head {
   width: 942px;
   margin: auto;
   padding: 0;
   border: none;
 }
-#brdheader .box-head h2 {
-  padding: 5px 0;
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 40px;
-  line-height: 1.7em;
-}
+
+
 #brdmenu {
   width: 942px;
   margin: auto;
@@ -46,12 +34,12 @@
   border: none;
   background: transparent;
 }
-#brdmenu a {
-  color: #fff;
-}
+
 #brdmenu a:hover {
   text-decoration: underline;
 }
+
+
 #forum-search-form {
   width: 942px;
   margin: auto;
@@ -93,6 +81,7 @@
   padding-right: 4px;
   background: transparent;
 }
+
 #brdfooter .box-content button {
   margin: 0;
 }
@@ -103,13 +92,7 @@
   position: absolute;
   top: -55px;
 }
-.blockpost div.box {
-  background-color: #0fbd8c;
-  border-top-color: #0fbd8c;
-}
-.blockpost .box-head {
-  border-top-color: #0fbd8c;
-}
+
 .blockpost .box-head a:hover {
   text-decoration: underline;
 }
@@ -147,4 +130,123 @@
 }
 .my-ocular-popup {
   color: #575e75;
+}
+
+
+/* ME */
+.blockpost div.box {
+  background-color: rgb(1, 112, 240);
+  border-top-color: rgb(1, 112, 240);
+}
+.box-head {
+  border-top-color: rgb(1, 112, 240) !important;
+  color: #fff;
+}
+
+.blockpost .box-head {
+  border-top-color: rgb(1, 112, 240);
+}
+#brdmenu a {
+  color: #4b515f;
+}
+#brdheader {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 0;
+  color: #4b515f;
+  background-color: rgb(252, 252, 252);
+
+  font-family: 'Helvetica Neue', 'Segoe UI';
+  font-size: 25px !important;
+  font-weight: bold;
+  margin: 50px auto 50px auto;
+}
+#brdheader .box-head h2 {
+  color: #4b515f;
+}
+
+
+/* ONLY ME */
+.conr {
+  display: none;
+}
+
+#navindex {
+  display: none !important;
+}
+
+.postright {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+  background-color: rgb(215, 234, 255) !important;
+  border-left-color: rgb(215, 234, 255) !important;
+  border-bottom: none;
+
+  min-height: 150px;
+}
+
+.postfootright {
+  background-color: rgb(215, 234, 255) !important;
+  border-left-color: rgb(215, 234, 255) !important;
+  padding: 10px;
+}
+
+.postfootleft {
+  background-color: rgb(215, 234, 255) !important;
+}
+
+.postleft {
+  border-top-left-radius: 20px;
+  background-color: rgb(215, 234, 255) !important;
+}
+
+.box {
+  border-radius: 20px;
+  margin-bottom: 40px !important;
+}
+
+.box-content {
+  background-color: rgb(1, 112, 240) !important;
+}
+
+#reply .box-content {
+  background-color: rgb(215, 234, 255) !important;
+}
+
+#reply .box-head {
+  background-color: rgb(215, 234, 255) !important;
+}
+
+#brdfooter {
+  display: none;
+}
+
+.box-content .tcl {
+  background-color: rgb(215, 234, 255) !important;
+}
+
+.tcr, .tc2, .tc3 {
+  background-color: rgb(215, 234, 255) !important;
+}
+
+#vf .box {
+  background-color: rgb(1, 112, 240) !important;
+}
+
+#idx1 .box{
+  background-color: rgb(1, 112, 240) !important; 
+}
+
+.blockpost .box-content {
+  border: none;
+}
+
+#messages .box-head{
+  display: none;
+}
+
+#messages .box-content{
+  background-color: rgb(255, 232, 157) !important;
 }
