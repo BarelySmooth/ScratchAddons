@@ -1,6 +1,9 @@
 :root {
   --main-bg-color: rgb(1, 112, 240);
-  --main-fg-color: rgb(215, 234, 255);
+  --main-fg-color: rgb(230 240 255);
+
+  /* --main-bg-color: rgb(1, 112, 240);
+  --main-fg-color: rgb(215, 234, 255); */
 }
 
 #content {
@@ -174,7 +177,7 @@
 
 
 /* ONLY ME */
-.conr {
+#brdheader .conr {
   display: none;
 }
 
@@ -216,16 +219,29 @@
   background-color: var(--main-bg-color) !important;
 }
 
+#reply {
+  margin-top: 75px !important;
+  background-color: var(--main-bg-color);
+}
+
 #reply .box-content {
   background-color: var(--main-fg-color) !important;
+  border-radius: 10px;
 }
 
 #reply .box-head {
-  background-color: var(--main-fg-color) !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 #brdfooter {
-  display: none;
+  background: none;
+}
+
+#brdfooter .box-content{
+  background-color: var(--main-fg-color) !important;
+  border-radius: 10px;
+  padding: 20px 40px;
+  line-height: 1.6;
 }
 
 .box-content .tcl {
@@ -268,10 +284,23 @@
   border-color: var(--main-bg-color);
 }
 
+.box .box-content {
+  background-color: var(--main-fg-color) !important;
+  border-radius: 20px;
+}
+
+.box-content > form {
+  background-color: var(--main-fg-color);
+}
+
 .djangobb thead .tcl {
   border-top-left-radius: 20px;
 }
 
 .djangobb thead .tcr {
   border-top-right-radius: 20px;
+}
+
+.postleft, .postfootleft, .blockpost label, .postright, .postfootright {
+  box-shadow: inset 1px 0 var(--main-fg-color);
 }
