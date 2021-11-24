@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: rgb(1, 112, 240);
+  --main-fg-color: rgb(215, 234, 255);
+}
+
 #content {
   width: 100%;
   min-width: 942px;
@@ -135,16 +140,16 @@
 
 /* ME */
 .blockpost div.box {
-  background-color: rgb(1, 112, 240);
-  border-top-color: rgb(1, 112, 240);
+  background-color: var(--main-bg-color);
+  border-top-color: var(--main-bg-color);
 }
 .box-head {
-  border-top-color: rgb(1, 112, 240) !important;
+  border-top-color: var(--main-bg-color) !important;
   color: #fff;
 }
 
 .blockpost .box-head {
-  border-top-color: rgb(1, 112, 240);
+  border-top-color: var(--main-bg-color);
 }
 #brdmenu a {
   color: #4b515f;
@@ -180,26 +185,26 @@
 .postright {
   border-top-right-radius: 20px !important;
   border-top-left-radius: 20px !important;
-  background-color: rgb(215, 234, 255) !important;
-  border-left-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
+  border-left-color: var(--main-fg-color) !important;
   border-bottom: none;
 
   min-height: 150px;
 }
 
 .postfootright {
-  background-color: rgb(215, 234, 255) !important;
-  border-left-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
+  border-left-color: var(--main-fg-color) !important;
   padding: 10px;
 }
 
 .postfootleft {
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 .postleft {
   border-top-left-radius: 20px;
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 .box {
@@ -208,15 +213,15 @@
 }
 
 .box-content {
-  background-color: rgb(1, 112, 240) !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 #reply .box-content {
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 #reply .box-head {
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 #brdfooter {
@@ -224,19 +229,19 @@
 }
 
 .box-content .tcl {
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 .tcr, .tc2, .tc3 {
-  background-color: rgb(215, 234, 255) !important;
+  background-color: var(--main-fg-color) !important;
 }
 
 #vf .box {
-  background-color: rgb(1, 112, 240) !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 #idx1 .box{
-  background-color: rgb(1, 112, 240) !important; 
+  background-color: var(--main-bg-color) !important; 
 }
 
 .blockpost .box-content {
@@ -260,7 +265,7 @@
 }
 
 .box .box-content, .box .box-content .inner {
-  border-color: rgb(1, 112, 240);
+  border-color: var(--main-bg-color);
 }
 
 .djangobb thead .tcl {
