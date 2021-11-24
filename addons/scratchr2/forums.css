@@ -250,3 +250,23 @@
 #messages .box-content{
   background-color: rgb(255, 232, 157) !important;
 }
+
+.djangobb td, .djangobb th {
+  border: transparent;
+}
+
+.djangobb .box {
+  border: #fff;
+}
+
+.box .box-content, .box .box-content .inner {
+  border-color: rgb(1, 112, 240);
+}
+
+.djangobb thead .tcl {
+  border-top-left-radius: 20px;
+}
+
+.djangobb thead .tcr {
+  border-top-right-radius: 20px;
+}
