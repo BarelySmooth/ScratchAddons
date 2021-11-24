@@ -215,6 +215,15 @@
   margin-bottom: 40px !important;
 }
 
+.box-head{
+  background-color: var(--main-bg-color) !important;
+}
+
+#brdheader .box-head {
+  background-color: transparent !important;
+}
+
+
 .box-content {
   background-color: var(--main-bg-color) !important;
 }
@@ -278,6 +287,7 @@
 
 .djangobb .box {
   border: #fff;
+  background-color: var(--main-bg-color);
 }
 
 .box .box-content, .box .box-content .inner {
