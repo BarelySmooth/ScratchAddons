@@ -1,316 +1,150 @@
-:root {
-  --main-bg-color: rgb(1, 112, 240);
-  --main-fg-color: rgb(230 240 255);
-
-  /* --main-bg-color: rgb(1, 112, 240);
-  --main-fg-color: rgb(215, 234, 255); */
-}
-
 #content {
-  width: 100%;
-  min-width: 942px;
-  padding-top: 50px;
-}
-.linkst,
-.linksb,
-.blocktable,
-.blockpost,
-.block,
-.djangobb #reply,
-.djangobb > .box:not(#brdheader):not(#brdfooter),
-.blockform {
-  width: 942px;
-  margin: auto;
-}
-#messages {
-  margin-bottom: 40px;
-}
-
-
-#brdheader > .box-head {
-  width: 942px;
-  margin: auto;
-  padding: 0;
-  border: none;
-}
-
-
-#brdmenu {
-  width: 942px;
-  margin: auto;
-  padding: 0;
-  border: none;
-  background: transparent;
-}
-
-#brdmenu a:hover {
-  text-decoration: underline;
-}
-
-
-#forum-search-form {
-  width: 942px;
-  margin: auto;
-  margin-top: 8px;
-  padding: none;
-  background: none;
-  border-top: none;
-}
-#forum-search-input {
-  width: calc(85% - 8px);
-  margin-right: 8px;
-  height: 48px;
-}
-.forum-search-list {
-  width: 942px;
-  margin: auto;
-  padding: 0;
-  margin-top: 8px;
-}
-.forum-search-list .blockpost {
-  width: 100%;
-  color: #575e75;
-}
-.forum-search-list .blockpost div.box {
-  background: var(--scratchr2-primaryColor);
-}
-#brdfooter {
-  margin-top: 40px;
-  margin-bottom: 0;
-  border-radius: 0;
-  border: none;
-}
-#brdfooter .box-content {
-  box-sizing: border-box;
-  width: 942px;
-  margin: auto;
-  padding-top: 20px;
-  padding-left: 4px;
-  padding-right: 4px;
-  background: transparent;
-}
-
-#brdfooter .box-content button {
-  margin: 0;
-}
-.blockpost {
-  position: relative;
-}
-.blockpost > a[name] {
-  position: absolute;
-  top: -55px;
-}
-
-.blockpost .box-head a:hover {
-  text-decoration: underline;
-}
-.blockpost .box-content,
-.postright,
-.postfootright {
-  background-color: #fff;
-}
-.postleft,
-.postfootleft {
-  background-color: #f2f2f2;
-}
-.postright,
-.postfootright {
-  border-left-color: #f2f2f2;
-}
-.djangobb th,
-.tc2,
-.tc3 {
-  background: #f2f2f2;
-}
-.topic_isread a {
-  font-weight: normal;
-}
-.djangobb > .postmsg {
-  box-sizing: border-box;
-  padding: 8px;
-}
-.my-ocular-reaction-button {
-  background-color: #f2f2f2;
-  box-shadow: 0 0 2px #0fbd8c;
-}
-.my-ocular-reaction-button.selected {
-  background-color: #0fbd8c;
-}
-.my-ocular-popup {
-  color: #575e75;
-}
-
-
-/* ME */
-.blockpost div.box {
-  background-color: var(--main-bg-color);
-  border-top-color: var(--main-bg-color);
-}
-.box-head {
-  border-top-color: var(--main-bg-color) !important;
-  color: #fff;
-}
-
-.blockpost .box-head {
-  border-top-color: var(--main-bg-color);
-}
-#brdmenu a {
-  color: #4b515f;
-}
-#brdheader {
-  margin-bottom: 40px;
-  padding-top: 20px;
-  padding-bottom: 8px;
-  border: none;
-  border-radius: 0;
-  color: #4b515f;
-  background-color: rgb(252, 252, 252);
-
-  font-family: 'Helvetica Neue', 'Segoe UI';
-  font-size: 25px !important;
-  font-weight: bold;
-  margin: 50px auto 50px auto;
-}
-#brdheader .box-head h2 {
-  color: #4b515f;
-}
-
-
-/* ONLY ME */
-#brdheader .conr {
-  display: none;
-}
-
-#navindex {
-  display: none !important;
-}
-
-.postright {
-  border-top-right-radius: 20px !important;
-  border-top-left-radius: 20px !important;
-  background-color: var(--main-fg-color) !important;
-  border-left-color: var(--main-fg-color) !important;
-  border-bottom: none;
-
-  min-height: 150px;
-}
-
-.postfootright {
-  background-color: var(--main-fg-color) !important;
-  border-left-color: var(--main-fg-color) !important;
-  padding: 10px;
-}
-
-.postfootleft {
-  background-color: var(--main-fg-color) !important;
-}
-
-.postleft {
-  border-top-left-radius: 20px;
-  background-color: var(--main-fg-color) !important;
-}
-
-.box {
-  border-radius: 20px;
-  margin-bottom: 40px !important;
-}
-
-.box-head{
-  background-color: var(--main-bg-color) !important;
-}
-
-#brdheader .box-head {
-  background-color: transparent !important;
-}
-
-
-.box-content {
-  background-color: var(--main-bg-color) !important;
-}
-
-#reply {
-  margin-top: 75px !important;
-  background-color: var(--main-bg-color);
-}
-
-#reply .box-content {
-  background-color: var(--main-fg-color) !important;
-  border-radius: 10px;
-}
-
-#reply .box-head {
-  background-color: var(--main-bg-color) !important;
-}
-
-#brdfooter {
-  background: none;
-}
-
-#brdfooter .box-content{
-  background-color: var(--main-fg-color) !important;
-  border-radius: 10px;
-  padding: 20px 40px;
-  line-height: 1.6;
-}
-
-.box-content .tcl {
-  background-color: var(--main-fg-color) !important;
-}
-
-.tcr, .tc2, .tc3 {
-  background-color: var(--main-fg-color) !important;
-}
-
-#vf .box {
-  background-color: var(--main-bg-color) !important;
-}
-
-#idx1 .box{
-  background-color: var(--main-bg-color) !important; 
-}
-
-.blockpost .box-content {
-  border: none;
-}
-
-#messages .box-head{
-  display: none;
-}
-
-#messages .box-content{
-  background-color: rgb(255, 232, 157) !important;
-}
-
-.djangobb td, .djangobb th {
-  border: transparent;
-}
-
-.djangobb .box {
-  border: #fff;
-  background-color: var(--main-bg-color);
-}
-
-.box .box-content, .box .box-content .inner {
-  border-color: var(--main-bg-color);
-}
-
-.box .box-content {
-  background-color: var(--main-fg-color) !important;
-  border-radius: 20px;
-}
-
-.box-content > form {
-  background-color: var(--main-fg-color);
-}
-
-.djangobb thead .tcl {
-  border-top-left-radius: 20px;
-}
-
-.djangobb thead .tcr {
-  border-top-right-radius: 20px;
-}
-
-.postleft, .postfootleft, .blockpost label, .postright, .postfootright {
-  box-shadow: inset 1px 0 var(--main-fg-color);
-}
+    width: 100%;
+    min-width: 942px;
+    padding-top: 50px;
+  }
+  .linkst,
+  .linksb,
+  .blocktable,
+  .blockpost,
+  .block,
+  .djangobb #reply,
+  .djangobb > .box:not(#brdheader):not(#brdfooter),
+  .blockform {
+    width: 942px;
+    margin: auto;
+  }
+  #messages {
+    margin-bottom: 40px;
+  }
+  #brdheader {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 0;
+    background: #0fbd8c;
+    color: #fff;
+  }
+  #brdheader > .box-head {
+    width: 942px;
+    margin: auto;
+    padding: 0;
+    border: none;
+  }
+  #brdheader .box-head h2 {
+    padding: 5px 0;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.7em;
+  }
+  #brdmenu {
+    width: 942px;
+    margin: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+  #brdmenu a {
+    color: #fff;
+  }
+  #brdmenu a:hover {
+    text-decoration: underline;
+  }
+  #forum-search-form {
+    width: 942px;
+    margin: auto;
+    margin-top: 8px;
+    padding: none;
+    background: none;
+    border-top: none;
+  }
+  #forum-search-input {
+    width: calc(85% - 8px);
+    margin-right: 8px;
+    height: 48px;
+  }
+  .forum-search-list {
+    width: 942px;
+    margin: auto;
+    padding: 0;
+    margin-top: 8px;
+  }
+  .forum-search-list .blockpost {
+    width: 100%;
+    color: #575e75;
+  }
+  .forum-search-list .blockpost div.box {
+    background: var(--scratchr2-primaryColor);
+  }
+  #brdfooter {
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+  }
+  #brdfooter .box-content {
+    box-sizing: border-box;
+    width: 942px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: transparent;
+  }
+  #brdfooter .box-content button {
+    margin: 0;
+  }
+  .blockpost {
+    position: relative;
+  }
+  .blockpost > a[name] {
+    position: absolute;
+    top: -55px;
+  }
+  .blockpost div.box {
+    background-color: #0fbd8c;
+    border-top-color: #0fbd8c;
+  }
+  .blockpost .box-head {
+    border-top-color: #0fbd8c;
+  }
+  .blockpost .box-head a:hover {
+    text-decoration: underline;
+  }
+  .blockpost .box-content,
+  .postright,
+  .postfootright {
+    background-color: #fff;
+  }
+  .postleft,
+  .postfootleft {
+    background-color: #f2f2f2;
+  }
+  .postright,
+  .postfootright {
+    border-left-color: #f2f2f2;
+  }
+  .djangobb th,
+  .tc2,
+  .tc3 {
+    background: #f2f2f2;
+  }
+  .topic_isread a {
+    font-weight: normal;
+  }
+  .djangobb > .postmsg {
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  .my-ocular-reaction-button {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 2px #0fbd8c;
+  }
+  .my-ocular-reaction-button.selected {
+    background-color: #0fbd8c;
+  }
+  .my-ocular-popup {
+    color: #575e75;
+  }
