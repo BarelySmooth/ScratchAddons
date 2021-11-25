@@ -314,3 +314,11 @@
 .postleft, .postfootleft, .blockpost label, .postright, .postfootright {
   box-shadow: inset 1px 0 var(--main-fg-color);
 }
+
+.closed-topic a {
+  color: #8ba1c4;
+}
+
+.iclosed {
+  filter: sepia(50%) hue-rotate(167deg);
+}

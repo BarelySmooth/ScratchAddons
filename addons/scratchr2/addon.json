@@ -101,7 +101,17 @@
     },
     {
       "url": "forums.css",
-      "matches": ["https://scratch.mit.edu/discuss/*"]
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "if": {
+        "settings": { "forum-userstyle": ["mxmou"] }
+      }
+    },
+    {
+      "url": "new-forums.css",
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "if": {
+        "settings": { "forum-userstyle": ["BarelySmooth"] }
+      }
     },
     {
       "url": "forums_topic.css",
@@ -179,6 +189,22 @@
       "name": "Link hover color",
       "type": "color",
       "default": "#4280d7"
+    },
+    {
+      "id": "forum-userstyle",
+      "name": "Forum Userstyle",
+      "type": "select",
+      "potentialValues": [
+        {
+          "id": "mxmou",
+          "name": "mxmou"
+        },
+        {
+          "id": "BarelySmooth",
+          "name": "BarelySmooth"
+        }
+      ],
+      "default": "mxmou"
     }
   ]
 }
