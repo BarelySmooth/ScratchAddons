@@ -188,26 +188,26 @@
 .postright {
   border-top-right-radius: 20px !important;
   border-top-left-radius: 20px !important;
-  background-color: var(--main-fg-color) !important;
-  border-left-color: var(--main-fg-color) !important;
+  background-color: var(--main-fg-color);
+  border-left-color: var(--main-fg-color);
   border-bottom: none;
 
   min-height: 150px;
 }
 
 .postfootright {
-  background-color: var(--main-fg-color) !important;
-  border-left-color: var(--main-fg-color) !important;
+  background-color: var(--main-fg-color);
+  border-left-color: var(--main-fg-color);
   padding: 10px;
 }
 
 .postfootleft {
-  background-color: var(--main-fg-color) !important;
+  background-color: var(--main-fg-color);
 }
 
 .postleft {
   border-top-left-radius: 20px;
-  background-color: var(--main-fg-color) !important;
+  background-color: var(--main-fg-color);
 }
 
 .box {

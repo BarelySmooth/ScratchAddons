@@ -135,3 +135,34 @@ footer a {
 .my-ocular-popup::after {
   border-top-color: #202020;
 }
+
+.modern {
+  --main-bg-color: rgb(1, 82, 175);
+  --main-fg-color: rgb(61, 61, 61);
+}
+
+.modern .postfootright,
+.modern .postright {
+  border-left-color: var(--main-fg-color);
+}
+
+.modern .postfootright,
+.modern .postfootleft,
+.modern .postright,
+.modern .postleft {
+  background-color: var(--main-fg-color);
+}
+
+.modern .blockpost .box {
+  background-color: var(--main-bg-color);
+  border-top-color: var(--main-bg-color);
+}
+
+/* PROGRESS: HERE */
+.modern #brdheader {
+  background-color: transparent !important;
+}
+
+.modern #brdheader h2 {
+  color: white;
+}

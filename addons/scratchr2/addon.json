@@ -206,5 +206,12 @@
       ],
       "default": "mxmou"
     }
+  ],
+  "userscripts": [
+    {
+      "url": "add_class.js",
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "runAtComplete": true
+    }
   ]
 }
