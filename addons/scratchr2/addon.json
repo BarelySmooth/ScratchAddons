@@ -32,7 +32,17 @@
     },
     {
       "url": "forums.css",
-      "matches": ["https://scratch.mit.edu/discuss/*"]
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "if": {
+        "settings": { "forum-userstyle": ["mxmou"] }
+      }
+    },
+    {
+      "url": "new-forums.css",
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "if": {
+        "settings": { "forum-userstyle": ["BarelySmooth"] }
+      }
     },
     {
       "url": "forums_topic.css",
@@ -65,6 +75,74 @@
         "https://scratch.mit.edu/accounts/password_change/",
         "https://scratch.mit.edu/accounts/email_change/"
       ]
+    },
+    {
+      "url": "quotes.css",
+      "matches": ["https://scratch.mit.edu/info/quotes/"]
+    },
+    {
+      "url": "experimental_dark_compatibility.css",
+      "matches": ["https://scratch.mit.edu/*"]
+    },
+    {
+      "url": "lightprimary_compatibility.css",
+      "matches": ["isNotScratchWWW"]
+    },
+    {
+      "url": "lightprimary_scratchwww_compatibility.css",
+      "matches": ["scratchWWWNoProject", "projects"]
+    },
+    {
+      "url": "lightprimary_mystuff_compatibility.css",
+      "matches": [
+        "https://scratch.mit.edu/mystuff/",
+        "https://scratch.mit.edu/accounts/settings/",
+        "https://scratch.mit.edu/accounts/password_change/",
+        "https://scratch.mit.edu/accounts/email_change/"
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "id": "primaryColor",
+      "name": "Primary color",
+      "type": "color",
+      "default": "#4d97ff"
+    },
+    {
+      "id": "linkColor",
+      "name": "Link color",
+      "type": "color",
+      "default": "#4d97ff"
+    },
+    {
+      "id": "activeColor",
+      "name": "Link hover color",
+      "type": "color",
+      "default": "#4280d7"
+    },
+    {
+      "id": "forum-userstyle",
+      "name": "Forum Userstyle",
+      "type": "select",
+      "potentialValues": [
+        {
+          "id": "mxmou",
+          "name": "mxmou"
+        },
+        {
+          "id": "BarelySmooth",
+          "name": "BarelySmooth"
+        }
+      ],
+      "default": "mxmou"
+    }
+  ],
+  "userscripts": [
+    {
+      "url": "add_class.js",
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "runAtComplete": true
     }
   ]
 }
