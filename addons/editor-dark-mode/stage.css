@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 .monitor_monitor-container_2J9gl,
 .monitor_list-body_2OFZ6 {
   background-color: var(--editorDarkMode-page);
@@ -44,4 +45,5 @@
 .monitor_list-header_-cp0o,
 .question_question-container_OuJwy {
   border-color: var(--editorDarkMode-border);
+}
 }

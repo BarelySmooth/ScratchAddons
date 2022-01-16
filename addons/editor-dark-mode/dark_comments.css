@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 .scratchCommentRect {
   fill: #322d01;
 }
@@ -11,4 +12,5 @@
 .scratchCommentText {
   fill: #fff;
   color: #fff;
+}
 }

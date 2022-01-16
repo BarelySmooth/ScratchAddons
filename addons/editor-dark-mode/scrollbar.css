@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 .sa-body-editor::-webkit-scrollbar,
 .sa-body-editor ::-webkit-scrollbar {
   width: 17px;
@@ -42,4 +43,5 @@
 .scrollable-canvas_vertical-scrollbar_lbD_c:hover,
 .scrollable-canvas_horizontal-scrollbar_2w6OD:hover {
   background-color: rgba(128, 128, 128, 0.8);
+}
 }

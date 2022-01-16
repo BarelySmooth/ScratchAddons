@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 /* Page background */
 .gui_body-wrapper_-N0sA,
 .gui_tab_27Unf:not(.gui_is-selected_sHAiu):hover,
@@ -607,4 +608,5 @@ img[src="/static/assets/26255153f92ea41df149a58d3c3fe2cf.svg"] /* record modal s
 }
 .sa-comment-preview-reduce-transparency {
   background-color: var(--editorDarkMode-input);
+}
 }
