@@ -3,7 +3,10 @@ export default async function ({ addon, global, console }) {
   let search_box_container = document.createElement("div");
   let search_box = document.createElement("input");
   let x_button_container = document.createElement("div");
-  search_box_container.setAttribute("class", "library_filter-bar-item_99aoX library_filter_2k-oj filter_filter_1JFal sa-sprite-search-box-container");
+  search_box_container.setAttribute(
+    "class",
+    "library_filter-bar-item_99aoX library_filter_2k-oj filter_filter_1JFal sa-sprite-search-box-container"
+  );
   search_box.setAttribute("type", "search");
   search_box.setAttribute("placeholder", "Search sprites...");
   search_box.setAttribute("id", "sa-sprite-search-box");
@@ -15,11 +18,13 @@ export default async function ({ addon, global, console }) {
 
   let sprite_selector_container = document.querySelector('[class^="sprite-selector_scroll-wrapper"]');
   sprite_selector_container.insertBefore(search_box_container, sprites_container);
-  search_box_container.innerHTML = '<img class="filter_filter-icon_3Pfaw" src="/static/assets/a4451ef35d29c4997f7c8e837da8af44.svg">';
+  search_box_container.innerHTML =
+    '<img class="filter_filter-icon_3Pfaw" src="/static/assets/a4451ef35d29c4997f7c8e837da8af44.svg">';
   search_box_container.appendChild(search_box);
   search_box_container.appendChild(x_button_container);
-  x_button_container.innerHTML = '<img class="filter_x-icon_zjpOg" src="/static/assets/9c49ade683c0f0d75796136ff5d1030f.svg">';
-  
+  x_button_container.innerHTML =
+    '<img class="filter_x-icon_zjpOg" src="/static/assets/9c49ade683c0f0d75796136ff5d1030f.svg">';
+
   addon.tab.displayNoneWhileDisabled(search_box, { display: "block" });
   addon.self.addEventListener("disabled", () => {
     for (let i = 0; i < sprites_container.children.length; i++) {
@@ -33,7 +38,7 @@ export default async function ({ addon, global, console }) {
   search_box.oninput = () => {
     if (search_box.value) {
       x_button_container.style.opacity = 1;
-      document.querySelector('.filter_x-icon-wrapper_1rP2w img').style.transform = "translateX(0px)";
+      document.querySelector(".filter_x-icon-wrapper_1rP2w img").style.transform = "translateX(0px)";
 
       for (let i = 0; i < sprites_container.children.length; i++) {
         if (
@@ -82,6 +87,7 @@ export default async function ({ addon, global, console }) {
     sprite_selector_container.insertBefore(search_box_container, sprites_container);
     search_box_container.appendChild(search_box);
     search_box_container.appendChild(x_button_container);
-    x_button_container.innerHTML = '<img class="filter_x-icon_zjpOg" src="/static/assets/9c49ade683c0f0d75796136ff5d1030f.svg">';
+    x_button_container.innerHTML =
+      '<img class="filter_x-icon_zjpOg" src="/static/assets/9c49ade683c0f0d75796136ff5d1030f.svg">';
   }
 }
