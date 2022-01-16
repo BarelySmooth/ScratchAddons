@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 body:not(.sa-body-editor)::-webkit-scrollbar,
 body:not(.sa-body-editor) ::-webkit-scrollbar {
   width: 17px;
@@ -44,4 +45,5 @@ body /* specificity */ .studio-list-inner-scrollbox::-webkit-scrollbar-thumb {
 textarea::-webkit-scrollbar-track,
 .scrollbar .track {
   box-shadow: none;
+}
 }
