@@ -1,3 +1,5 @@
+@media (prefers-color-scheme: dark) {
 .outer .title-banner.masthead {
   background-color: #99864d;
+}
 }

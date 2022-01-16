@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 #brdheader,
 .blockpost div.box {
   background-color: #064734 !important;
@@ -5,4 +6,5 @@
 .blockpost div.box,
 .blockpost .box-head {
   border-top-color: #064734 !important;
+}
 }

@@ -1,6 +1,8 @@
+@media (prefers-color-scheme: dark) {
 html,
 body,
 #view {
   background-color: var(--darkWww-box);
   color: var(--darkWww-box-text);
+}
 }

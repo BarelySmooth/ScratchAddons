@@ -1,3 +1,5 @@
+@media (prefers-color-scheme: dark) {
+  
 .parents .title-banner.masthead .ted-talk {
   border-color: black;
 }
@@ -51,4 +53,5 @@
 .financials-section,
 .directors-message {
   background-color: #16171d;
+}
 }

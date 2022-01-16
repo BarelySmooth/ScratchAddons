@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 /* Page background */
 html,
 body {
@@ -762,4 +763,5 @@ p {
 .banner /* confirm email */ {
   /* Fix ugly gray shadow */
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
 }

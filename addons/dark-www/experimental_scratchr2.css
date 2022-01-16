@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 /* Page background */
 html,
 body {
@@ -657,4 +658,5 @@ input.link.black {
 .stats li.data {
   background-image: url("%addon-self-dir%/assets/meow.png");
   background-size: 20px 15px;
+}
 }
