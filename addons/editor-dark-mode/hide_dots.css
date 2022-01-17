@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-[id^="blocklyGridPattern"] line {
-  stroke: none;
-}
+  [id^="blocklyGridPattern"] line {
+    stroke: none;
+  }
 }
