@@ -1,6 +1,7 @@
 import { textColor, multiply, brighten } from "../../libraries/common/cs/text-color.esm.js";
 
 function createStyle(url, disabled) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) return;
   const style = document.createElement("link");
   style.rel = "stylesheet";
   style.href = url;
@@ -9,6 +10,7 @@ function createStyle(url, disabled) {
 }
 
 function updateCssVariables(node, addon) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) return;
   if (node === undefined) return;
   if (addon.self.disabled) {
     node.style.setProperty("--darkWww-page", "#ffffff");
@@ -44,6 +46,7 @@ function updateCssVariables(node, addon) {
 }
 
 export default async function ({ addon, console }) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) return;
   const preview = await addon.tab.waitForElement(".markItUpPreviewFrame");
   let previewRoot;
   const observer = new MutationObserver(function (records, observer) {
