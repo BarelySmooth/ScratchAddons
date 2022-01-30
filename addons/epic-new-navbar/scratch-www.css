@@ -1,0 +1,87 @@
+:root {
+  --header-color: #4a5577d0;
+  --dropdown-color: #4a5577;
+  /* --dropdown-color: #4a55779d; */
+  --header-hover-color: #4a5577d0;
+  --search-bar-radius: 30px;
+}
+
+html {
+  /* background-color: white !important; */
+}
+
+#app {
+  /* background-color: white !important; */
+}
+
+.page {
+  /* background-color: white !important; */
+}
+
+.studio-page {
+  /* background-color: ; */
+}
+
+#navigation {
+  border-radius: 10px;
+  margin: 10px 45px 10px 25px;
+  right: 0px;
+  width: auto !important;
+
+  background-color: var(--header-color) !important;
+  backdrop-filter: blur(7px);
+}
+
+#view {
+  margin-top: 70px !important;
+}
+
+/* .account-nav {
+    background-color: #4a5577d0 !important;
+} */
+
+#app .dropdown {
+  background-color: var(--dropdown-color);
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #4a5577;
+}
+
+.dropdown ul {
+  background-color: var(--dropdown-color) !important;
+  backdrop-filter: blur(7px) !important;
+}
+
+.col-sm-9 .input {
+  border-radius: var(--search-bar-radius) !important;
+}
+
+#navigation .messages .message-count.show {
+  background: linear-gradient(45deg, #ff7601, #ffab1a) !important;
+}
+
+/* project page alert */
+/* doesn't belong here, but whatever */
+.banner-outer {
+  width: min-content;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 50px;
+}
+
+/* S */
+
+/* COMPATIBILITY */
+/* Chromium is working on implementing support for :has() : https://bugs.chromium.org/p/chromium/issues/detail?id=669058 */
+/* Mozilla is *probably* working on implementing support for :has(): https://bugzilla.mozilla.org/show_bug.cgi?id=418039 */
+/* Safari already implemented support for :has(): https://developer.apple.com/safari/technology-preview/release-notes/ */
+/* I honestly can't believe safari is first at something lol */
+/* Proof that this syntax works: https://u.cubeupload.com/BarelySmooth/Screenshot20220130at.png */
+.page:has(.ideas-banner) {
+  background-color: #febf00 !important;
+}
+
+.page:has(.ideas-banner) {
+  background-color: #febf00 !important;
+}

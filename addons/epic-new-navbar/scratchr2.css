@@ -1,0 +1,105 @@
+/* Works well with mxmou's userstyle */
+/* for scratchr2 only */
+
+:root {
+  --search-bar-radius: 30px;
+  --header-color: #4a5577d0;
+}
+
+#topnav {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 3px rgb(0 0 0 / 25%);
+  width: 100%;
+  height: 50px;
+  border: none;
+}
+
+#topnav .innerwrap {
+  border-radius: 10px;
+  margin: 10px 45px 10px 25px;
+  right: 0px;
+  width: auto !important;
+
+  background-color: var(--header-color) !important;
+  backdrop-filter: blur(7px);
+
+  height: 50px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topnav li {
+  border: none !important;
+}
+
+#topnav .logo {
+  margin-top: 7px;
+}
+
+#topnav .logo span {
+  /* background-image: url(/images/logo_sm.png) !important; */
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size: 95%;
+  height: 35px;
+}
+
+#topnav .container {
+  height: 50px;
+  align-items: center !important;
+  padding: 0px 20px;
+}
+
+#topnav ul.account-nav {
+  margin-bottom: 0px !important;
+  align-self: center !important;
+}
+
+#topnav ul.account-nav .logged-in-user.dropdown.open {
+  background-color: var(--header-color);
+}
+
+/* #topnav ul.account-nav .logged-in-user.dropdown.open ul.user-nav {
+  background-color: var(--header-color);
+} */
+
+#topnav ul.account-nav .logged-in-user .dropdown-menu {
+  margin-top: 10px;
+  background-color: #4a5577;
+  box-shadow: 0px 0px 20px #4a5577;
+  border-radius: 10px;
+}
+
+#topnav li:hover {
+  transition: 0.3s;
+  background-color: var(--header-hover-color) !important;
+  border-radius: 4px;
+}
+
+#topnav .site-nav {
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Segoe UI", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+}
+
+#topnav .logo {
+  margin-top: 15px;
+}
+
+#topnav form.search input[type="text"] {
+  margin-top: 0px;
+  border-radius: var(--search-bar-radius);
+}
+
+#topnav form.search input[type="submit"] {
+  margin-top: 0px;
+}
+
+#topnav li.messages .notificationsCount {
+  background: linear-gradient(45deg, #ff7601, #ffab1a) !important;
+}

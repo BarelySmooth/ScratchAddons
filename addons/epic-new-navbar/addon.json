@@ -1,0 +1,35 @@
+{
+    "name": "Floating nacbar",
+    "description": "ePIC nEW nAVBAR",
+    "credits": [
+      {
+        "name": "user"
+    }
+    ],
+    "userstyles": [
+        {
+            "url": "scratch-www.css",
+            "matches": ["scratchWWWNoProject"]
+        },
+        {
+            "url": "frontpage.css",
+            "matches": ["scratch.mit.edu"]
+        },
+        {
+            "url": "scratchr2.css",
+            "matches": ["isNotScratchWWW"]
+        },
+        {
+            "url": "studio.css",
+            "matches": ["https://scratch.mit.edu/studios/*"]
+        },
+        {
+            "url": "explore_ideas.css",
+            "matches": ["https://scratch.mit.edu/explore/*", "https://scratch.mit.edu/ideas"]
+        }
+      ],
+    "versionAdded": "1.24.0",
+    "tags": ["community", "recommended", "profiles", "forums", "studios"],
+    "enabledByDefault": false
+  }
+  
